@@ -9,6 +9,8 @@ class claw {
         double rotationalPosition;
         bool onRedAlliance;
 
+        //There may be more attributes needed than the ones above, add them below
+
     public:
         claw( ); //fill in with the necessary parameters for a constructor
     
@@ -19,14 +21,13 @@ class claw {
 
         //Getters for the claw state
         bool getClawOpen();
-        double getClawRotation();
+        bool getClawRotation();
         double getColor();
 
         //Add movement methods (add parameters as necessary)
         void openClaw( );
-        void rotateClaw( );
+        void toggleClawRotation( );
         void autoOrientation( );
-        void resetOrientation( );
         void allienceOrient( );
 
         //color selector

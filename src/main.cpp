@@ -95,17 +95,49 @@ int main() {
   while (true) {
     wait(100, msec);
 
-    /*
-    Controls for Claw control and their respective methods:
-
-    void openClaw( );
-    L2: open claw 
-    R2: close claw
-
     
-
-
-
+    // Controls for Claw control and their respective methods:
+    
+    /*
+    Part 1:
     */
+
+  
+    // void openClaw( );
+    // L2: open claw 
+    // R2: close claw
+
+
+
+    // void toggleClawRotation( );
+    // L1: toggles claw rotation
+
+
+
+    /*
+    Part 2:
+    */
+
+
+    // void autoOrientation( );
+    // X: performs auto orientation
+
+
+
+
+    /*
+    Part 3:
+    */
+
+
+    // void colorSelect( );
+    // B: cycle colors
+
+    // void colorConfirm( );
+    // A: confirm selected color
+
+    // void allienceOrient( );
+    // Y: perform alliance orientation
+    
   }
 }

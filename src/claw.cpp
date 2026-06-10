@@ -16,11 +16,11 @@ bool claw::getClawOpen() {
 }
 
 //Returns the rotation of the claw
-double claw::getClawRotation() {
+bool claw::getClawRotation() {
 
 }
 
-//Returns the color of the top part of the pin in the claw, including a case for no color
+//Returns the color of the top part of the pin in the claw, including a case for no object detected
 double claw::getColor(){
 
 }
@@ -32,17 +32,12 @@ void claw::openClaw(){
 }
 
 //Toggles the rotation of the claw between facing up and facing down, with each button press rotating a held pin by 180 degrees
-void claw::rotateClaw(){
+void claw::toggleClawRotation(){
 
 }
 
 //Automatically rotates the claw so that a yellow side is facing down, and if there isn't yellow, do anything
 void claw::autoOrientation(){
-
-}
-
-//
-void claw::resetOrientation(){
 
 }
 
