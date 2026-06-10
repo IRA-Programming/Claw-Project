@@ -28,7 +28,7 @@ class claw {
         void openClaw( );
         void toggleClawRotation( );
         void autoOrientation( );
-        void allienceOrient( );
+        void allianceOrient( );
 
         //color selector
         void colorSelect( );
