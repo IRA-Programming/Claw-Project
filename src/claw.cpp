@@ -51,6 +51,6 @@ void claw::colorConfirm(){
 }
 
 //Automatically rotates the pin so that your selected alliance color is on the bottom, and if there isn't your alliance color, do anything
-void claw::allienceOrient(){
+void claw::allianceOrient(){
 
 }
