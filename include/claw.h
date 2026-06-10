@@ -6,7 +6,7 @@ class claw {
     private:
         //declare attributes here!
         bool clawIsOpen;
-        double rotationalPosition;
+        bool rotationalPosition;
         bool onRedAlliance;
 
         //There may be more attributes needed than the ones above, add them below

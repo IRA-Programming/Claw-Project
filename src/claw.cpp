@@ -3,7 +3,7 @@
 
 
 //Implement the constructor here
-claw::claw( ) :  {
+claw::claw( ) : {
 
 }
 
@@ -25,8 +25,7 @@ double claw::getColor(){
 
 }
 
-//Opens/closes the claw fluidly (not a toggle) depending on an input boolean parameter
-//Specifically, if the parameter is true, then open the claw, and otherwise, close the claw
+//Opens/closes the claw with a toggle
 void claw::openClaw(){
 
 }
