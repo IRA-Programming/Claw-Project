@@ -5,6 +5,7 @@ extern brain Brain;
 extern motor clawOpen;
 extern motor clawRotate;
 extern optical Optical;
+extern controller Controller;
 
 /**
  * Used to initialize code/tasks/devices added using tools in VEXcode Pro.

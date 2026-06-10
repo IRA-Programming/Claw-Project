@@ -19,7 +19,7 @@ competition Competition;
 
 // define your global instances of motors and other devices here
 
-/*---------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------P-*/
 /*                          Pre-Autonomous Functions                         */
 /*                                                                           */
 /*  You may want to perform some actions before the competition starts.      */
@@ -94,5 +94,18 @@ int main() {
   // Prevent main from exiting with an infinite loop.
   while (true) {
     wait(100, msec);
+
+    /*
+    Controls for Claw control and their respective methods:
+
+    void openClaw( );
+    L2: open claw 
+    R2: close claw
+
+    
+
+
+
+    */
   }
 }

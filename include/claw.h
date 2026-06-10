@@ -4,18 +4,34 @@
 class claw {
 
     private:
-    //include attributes here!
-
+        //declare attributes here!
+        bool clawIsOpen;
+        double rotationalPosition;
+        bool onRedAlliance;
 
     public:
-        claw(); //fill in with the necessary parameters for a constructor
+        claw( ); //fill in with the necessary parameters for a constructor
     
-    //Add the vex components used for the claw
+        //Add the vex components used for the claw
+        motor clawOpen;
+        motor clawRotate;
+        optical opticalSensor;
 
-    //Add getters for the claw state
+        //Getters for the claw state
+        bool getClawOpen();
+        double getClawRotation();
+        double getColor();
 
-    //Add movement methods
+        //Add movement methods (add parameters as necessary)
+        void openClaw( );
+        void rotateClaw( );
+        void autoOrientation( );
+        void resetOrientation( );
+        void allienceOrient( );
 
+        //color selector
+        void colorSelect( );
+        void colorConfirm( );
 
 
 };
