@@ -1,6 +1,11 @@
 #include "vex.h"
 #include "claw.h"
 
+/*
+ *
+ * Part 1
+ * 
+ */
 
 //Implement the constructor here
 claw::claw( ) : {
@@ -8,7 +13,36 @@ claw::claw( ) : {
 }
 
 //Add other methods below. Remember to use :: syntax!
-//Remeber, these methods are only meant for functionality when called. Do not put controller button code in here!
+//Remeber, these methods are only meant for functionality when called. 
+//Do not put controller button code in here!
+
+/* Toggles whether the claw is open or closed. Check the attribute
+ * clawIsOpen to determine whether the claw is currently open or closed.
+ * Then, use a movement command on the clawOpen motor to switch between
+ * open or closed. Make sure to update the value of the clawIsOpen 
+ * attribute!
+ */
+
+void claw::toggleOpenClaw(){
+
+    //basic structure for this method
+    if(clawIsOpen) {
+        //close the claw
+    }
+    else {
+        //open the claw
+    }
+
+}
+
+/* Toggles whether the claw is rightside up or upside down. Use
+ * the rotationalPosition attribute, and switch the position of
+ * the claw. This method should work similarly to openClaw().
+ */
+
+void claw::toggleClawRotation(){
+
+}
 
 //Returns if the claw is open
 bool claw::getClawOpen() {
@@ -20,37 +54,55 @@ bool claw::getClawRotation() {
 
 }
 
-//Returns the color of the top part of the pin in the claw, including a case for no object detected
+/*
+ *
+ * Part 2
+ * 
+ */
+
+/* If an object is detected, returns the hue of the bottom part of the 
+ * pin grabbed by the claw.
+ * If no object is detected, return -1 instead.
+ */
+
 double claw::getColor(){
-
+    return 0;
 }
-
-//Opens/closes the claw with a toggle
-void claw::openClaw(){
-
-}
-
-//Toggles the rotation of the claw between facing up and facing down, with each button press rotating a held pin by 180 degrees
-void claw::toggleClawRotation(){
-
-}
-
-//Automatically rotates the claw so that a yellow side is facing down, and if there isn't yellow, do anything
+/* If an object is detected, automatically rotate the claw so that a
+ * yellow side will face down.
+ * If neither end of the pin is yellow, stop rotating.
+ */
 void claw::autoOrientation(){
 
 }
 
-//In each call of this method, cycle through red/blue and display it on the controller screen while there isn't a color selected (Hint: Use API)
+/*
+ *
+ * Part 3
+ * 
+ */
+
+/* In each call of this method, cycle through red/blue and 
+ * display it on the controller screen while there isn't a color 
+ * selected (Hint: Use API)
+ */
+
 void claw::colorSelect(){
 
 }
 
-//Assigns the currently displayed color on the controller screen to an attribute in the claw class, and clear the controller screen
+/* Assigns the currently displayed color on the controller screen to 
+ * an attribute in the claw class, and clear the controller screen
+ */
+
 void claw::colorConfirm(){
 
 }
 
-//Automatically rotates the pin so that your selected alliance color is on the bottom, and if there isn't your alliance color, do anything
+/* Automatically rotates the pin so that your selected alliance color 
+ * is on the top. If there isn't your alliance color, on the pin, try
+ * to rotate it so your opponent's color is on the bottom.
+ */
 void claw::allianceOrient(){
 
 }

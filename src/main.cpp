@@ -11,6 +11,7 @@
 // ---- END VEXCODE CONFIGURED DEVICES ----
 
 #include "vex.h"
+#include "claw.h"
 
 using namespace vex;
 
@@ -64,16 +65,35 @@ void autonomous(void) {
 /*---------------------------------------------------------------------------*/
 
 void usercontrol(void) {
-  // User control code here, inside the loop
-  while (1) {
-    // This is the main execution loop for the user control program.
-    // Each time through the loop your program should update motor + servo
-    // values based on feedback from the joysticks.
 
-    // ........................................................................
-    // Insert user code here. This is where you use the joystick values to
-    // update your motors, etc.
-    // ........................................................................
+  //Create an instance of the claw class
+  //claw testbedClaw(parameters for the constructor here);
+
+
+  //declare variables for toggle controls
+
+  while (1) {
+    
+    /*
+    Part 1:
+    */
+
+    //call openClaw() in a toggle control with button L1
+    
+    //call toggleClawRotation() in a toggle control with button L2
+
+    /*
+    Part 2:
+    */
+
+    //call autoOrientation() when button X is pressed
+
+    /*
+    Part 3:
+    */
+
+    // call allienceOrient() when button Y is pressed
+    
 
     wait(20, msec); // Sleep the task for a short amount of time to
                     // prevent wasted resources.
@@ -93,51 +113,8 @@ int main() {
 
   // Prevent main from exiting with an infinite loop.
   while (true) {
+    
     wait(100, msec);
-
-    
-    // Controls for Claw control and their respective methods:
-    
-    /*
-    Part 1:
-    */
-
-  
-    // void openClaw( );
-    // L2: open claw 
-    // R2: close claw
-
-
-
-    // void toggleClawRotation( );
-    // L1: toggles claw rotation
-
-
-
-    /*
-    Part 2:
-    */
-
-
-    // void autoOrientation( );
-    // X: performs auto orientation
-
-
-
-
-    /*
-    Part 3:
-    */
-
-
-    // void colorSelect( );
-    // B: cycle colors
-
-    // void colorConfirm( );
-    // A: confirm selected color
-
-    // void allienceOrient( );
-    // Y: perform alliance orientation
     
   }
 }

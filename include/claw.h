@@ -25,7 +25,7 @@ class claw {
         double getColor();
 
         //Add movement methods (add parameters as necessary)
-        void openClaw( );
+        void toggleOpenClaw( );
         void toggleClawRotation( );
         void autoOrientation( );
         void allianceOrient( );
