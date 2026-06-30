@@ -31,8 +31,8 @@ class claw {
         void allianceOrient( );
 
         //color selector
-        void colorSelect( );
-        void colorConfirm( );
+        std::string colorSelect( );
+        std::string getAllianceColor( );
 
 
 };

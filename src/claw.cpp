@@ -1,5 +1,6 @@
 #include "vex.h"
 #include "claw.h"
+#include <string>
 
 /*
  *
@@ -82,20 +83,21 @@ void claw::autoOrientation(){
  * 
  */
 
-/* In each call of this method, cycle through red/blue and 
- * display it on the controller screen while there isn't a color 
- * selected (Hint: Use API)
+/* In each call of this method, check the onRedAlliance attribute
+ * and switch it to the opposite value. Then, return the new alliance
+ * you are on as a string.
+ * 
+ * If onRedAlliance becomes true after switching, return "red"
+ * If onRedAlliance becomes false after switching, return "blue"
  */
 
-void claw::colorSelect(){
+std::string claw::colorSelect(){
 
 }
 
-/* Assigns the currently displayed color on the controller screen to 
- * an attribute in the claw class, and clear the controller screen
- */
 
-void claw::colorConfirm(){
+//Return "red" if on red alliance, "blue" if on blue alliance
+std::string claw::getAllianceColor(){
 
 }
 
