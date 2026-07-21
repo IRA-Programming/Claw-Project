@@ -92,13 +92,13 @@ void claw::autoOrientation(){
  */
 
 std::string claw::colorSelect(){
-
+    return "";
 }
 
 
 //Return "red" if on red alliance, "blue" if on blue alliance
 std::string claw::getAllianceColor(){
-
+    return "";
 }
 
 /* Automatically rotates the pin so that your selected alliance color 
