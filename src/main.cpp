@@ -78,7 +78,7 @@ void usercontrol(void) {
     Part 1:
     */
 
-    //call openClaw() in a toggle control with button L1
+    //call toggleOpenClaw() in a toggle control with button L1
     
     //call toggleClawRotation() in a toggle control with button L2
 
